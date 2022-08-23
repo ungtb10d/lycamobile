@@ -1,0 +1,24 @@
+{
+  "name": "lycamobile",
+  "version": "1.0.0",
+  "description": "A simple tool to get information from your LycaMobile account",
+  "bin": {
+    "lycamobile": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulyagin/lycamobile.git"
+  },
+  "keywords": [],
+  "author": "Fedor Sulyagin <fedor@sulyagin.com>",
+  "license": "MIT",
+  "dependencies": {
+    "FormData": "^0.10.1",
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "2",
+    "yargs": "^17.5.1"
+  }
+}

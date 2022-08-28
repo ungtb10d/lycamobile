@@ -64,9 +64,7 @@ const data = auth.then(cookie => fetch(`https://${options.domain}/en/my-account/
     )];
     expElements.forEach((el, i) => {
       if (expElements[i] && expElements[i + 1] && i % 2 === 0) {
-        const start = expElements[i].match(/\b\d{2}-\d{2}-\d{4}\b/) || [null]
-        const end = expElements[i + 1].match(/\b\d{2}-\d{2}-\d{4}\b/) || [null]
-        expiration.push({start: start[0], end: end[0]});
+        expiration.push(expElements[i + 1].match(/\b\d{2}-\d{2}-\d{4}\b/) || [null]);
       }
     });
     const internet = [...select("div.bdl-mins").map((i, el) => {
@@ -88,6 +86,6 @@ data.then(res => {
 * Phone: ${res.phone}
 * Money balance: ${res.balance}
 * Internet balance: ${res.internet.join(', ')}
-* Expiration: ${res.expiration.map((el) => `${el.start} — ${el.end}`).join(', ')}
+* Expiration: ${res.expiration.join(', ')}
   `)
 });

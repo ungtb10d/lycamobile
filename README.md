@@ -27,7 +27,7 @@ lycamobile -n 33000000000 -p XYZXYZ
 * Phone: +33000000000
 * Money balance: €9,69
 * Internet balance: 41.50GB
-* Expiration: 28-01-2022 — 28-02-2022
+* Expiration: 28-02-2022
 ```
 
 ### License
